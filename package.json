@@ -1,0 +1,21 @@
+{
+  "name": "cloud-claw",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev --ip 0.0.0.0",
+    "start": "wrangler dev",
+    "cf-typegen": "wrangler types",
+    "lint": "oxfmt && oxlint",
+    "postinstall": "npm run lint"
+  },
+  "devDependencies": {
+    "@cloudflare/containers": "^0.1.0",
+    "oxfmt": "^0.28.0",
+    "oxlint": "^1.43.0",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.63.0"
+  },
+  "packageManager": "pnpm@10.28.2"
+}
